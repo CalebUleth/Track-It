@@ -55,6 +55,18 @@ connect-src 'self' https://*.googleapis.com *.google.com https://*.gstatic.com d
             <div data-name="home" class="page">
                 <!-- component is fixed to the page -->
                 <div class="page-content">
+                    
+                    <div class="navbar">
+                        <div class="navbar-bg"></div>
+                        <div class="navbar-inner">
+                            <div class="title">Track It</div>
+                            <div class="title-large">
+                                <div class="title-large-text">Track It</div>
+                              </div>
+                        </div>
+                    </div>
+
+
                     <div class="fab fab-extended fab-center-bottom color-red">
                         <a href="#" onclick="toggleTracking()">
                             <!--<i class="icon f7-icons if-not-md">plus</i>
@@ -63,10 +75,19 @@ connect-src 'self' https://*.googleapis.com *.google.com https://*.gstatic.com d
                         </a>
                     </div>
 
-
-                    <h1>My current location</h1>
-                    <div id="currentPos">Loading position...</div>
-                    <a href="/page2/" class="button button-fill color-blue">Map</a>
+                    <!--https://www.svgrepo.com/svg/55411/right-arrow-->
+                    <div class="arrow">
+                        <object data="img\right-arrow-svgrepo-com.svg" width="250px" height="250px"></object>
+                    </div>
+                    <h3>Angle to target</h3>
+                    <div id="currentAngle">Loading angle...</div>
+                    <h3>Distance to target</h3>
+                    <div id="currentDist">Loading distance...</div>
+                    <h3>Distance to target</h3>
+                    <div id="debug">debug</div>
+                    
+                    
+                    
                 </div>
             </div>
         </div>
